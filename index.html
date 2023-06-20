@@ -12,6 +12,10 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/style-liberty.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<!-- Bootstrap 5 -->
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	 -->
 	<!-- Option 1: Include in HTML -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -30,18 +34,25 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
 	<link rel="stylesheet" href="carousel/css/animate.css">
 	<link rel="stylesheet" href="carousel/css/style.css">
-	<!-- <script
-    nonce="2165f85a-8ce5-4a71-a9bf-6450e5b6fb29">(function (w, d) { !function (dK, dL, dM, dN) { dK[dM] = dK[dM] || {}; dK[dM].executed = []; dK.zaraz = { deferred: [], listeners: [] }; dK.zaraz.q = []; dK.zaraz._f = function (dO) { return function () { var dP = Array.prototype.slice.call(arguments); dK.zaraz.q.push({ m: dO, a: dP }) } }; for (const dQ of ["track", "set", "debug"]) dK.zaraz[dQ] = dK.zaraz._f(dQ); dK.zaraz.init = () => { var dR = dL.getElementsByTagName(dN)[0], dS = dL.createElement(dN), dT = dL.getElementsByTagName("title")[0]; dT && (dK[dM].t = dL.getElementsByTagName("title")[0].text); dK[dM].x = Math.random(); dK[dM].w = dK.screen.width; dK[dM].h = dK.screen.height; dK[dM].j = dK.innerHeight; dK[dM].e = dK.innerWidth; dK[dM].l = dK.location.href; dK[dM].r = dL.referrer; dK[dM].k = dK.screen.colorDepth; dK[dM].n = dL.characterSet; dK[dM].o = (new Date).getTimezoneOffset(); if (dK.dataLayer) for (const dX of Object.entries(Object.entries(dataLayer).reduce(((dY, dZ) => ({ ...dY[1], ...dZ[1] })), {}))) zaraz.set(dX[0], dX[1], { scope: "page" }); dK[dM].q = []; for (; dK.zaraz.q.length;) { const d_ = dK.zaraz.q.shift(); dK[dM].q.push(d_) } dS.defer = !0; for (const ea of [localStorage, sessionStorage]) Object.keys(ea || {}).filter((ec => ec.startsWith("_zaraz_"))).forEach((eb => { try { dK[dM]["z_" + eb.slice(7)] = JSON.parse(ea.getItem(eb)) } catch { dK[dM]["z_" + eb.slice(7)] = ea.getItem(eb) } })); dS.referrerPolicy = "origin"; dS.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(dK[dM]))); dR.parentNode.insertBefore(dS, dR) };["complete", "interactive"].includes(dL.readyState) ? zaraz.init() : dK.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);
-  </script> -->
 
 
+	<!-- Send Mail -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script src="sendMail/mail.js"></script>
+	<script type="text/javascript">
+	(function(){
+		emailjs.init("bOla8srH93iJXeA9P");
+	})();
+	</script>
+	
 
 </head>
 
 
-
-
 <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+	<script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+	<script async src='https://www.googletagmanager.com/gtag/js?id=G-98H8KRKT85'></script>
+	<meta name="robots" content="noindex">
 	<nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
 		<div class="container">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
@@ -49,829 +60,39 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
-				<ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="#section-portfolio">Portfolio</a></li>
-					<li class="nav-item"><a class="nav-link" href="#section-resume">Resume</a></li>
-					<li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
+				<ul class="menu">
+					<li class="nav-item"><a class="nav-link" href="/index.html" style="color: #F15D2A !important;">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="/portfolio-detail.html">Portfolio</a></li>
+					<li class="nav-item"><a class="nav-link" href="/resume.html">Resume</a></li>
 					<li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<!-- <section class="site-hero" style="background-image: url(images/image_1.jpg);" id="section-home"
-		data-stellar-background-ratio="0.5">
-		<div class="container">
-			<div class="row intro-text align-items-center justify-content-center">
-				<div class="col-md-10 text-center pt-5">
-					<h1 class="site-heading site-animate">Hello, I'm <strong class="d-block">Pham Thien Toan</strong>
-					</h1>
-					<strong class="d-block text-white text-uppercase letter-spacing">welcome to My Workspace</strong>
-				</div>
-			</div>
-		</div>
-	</section> -->
 
 	<!-- ======= Hero Section ======= -->
 	<section id="hero" class="site-hero d-flex flex-column justify-content-center align-items-center">
 		<div class="hero-container col-md-10 text-center pt-5" data-aos="fade-in">
-			<h1>Pham Thien Toan</h1>
-			<p>I'm <span class="typed" data-typed-items="Freelancer, Graphic Designer"></span></p>
-			<strong class="d-block text-white text-uppercase letter-spacing">welcome to My Workspace</strong>
+			<h1 class="site-heading site-animate">Hello! </h1>
+			<h3 class="d-block" style="font-weight: 500;"> I am</h1>
+			<h3 style="font-weight: 500;"> Pham Thien Toan</h1>
+			<p><span class="typed" data-typed-items="Freelance Designer"></span></p>
+			<strong style="color: #F15D2A !important;" class="d-block text-white text-uppercase letter-spacing">welcome
+				to My Workspace</strong>
 		</div>
 	</section>
 	<!-- End Hero -->
-	<section class="site-section" id="section-portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="section-heading text-center col-md-12">
-					<h2>Featured <strong>Portfolio</strong></h2>
-				</div>
-			</div>
 
 
-			<div class="filters">
-				<ul>
-					<li class="active" data-filter="*">All</li>
-					<li data-filter=".visual-identity">Visual Identity</li>
-					<li data-filter=".advertising">Advertising</li>
-					<li data-filter=".publication">Publication</li>
-					<li data-filter=".packaging">Packaging</li>
-					<li data-filter=".AI">Art & Illustation</li>
-				</ul>
-			</div>
-			<div class="filters-content">
-				<div class="row grid">
-					<div class="single-portfolio col-sm-4 all visual-identity">
-						<div class="relative">
-							<div class="thumb portfolio-item">
-								<div class="overlay overlay-bg"></div>
-								<a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-									<img class="img-fluid" src="images/02.jpg" alt="..." />
-								</a>
-							</div>
-						</div>
-						<div class="p-inner">
-							<h4>Creative Package Design</h4>
-							<div class="cat">Packaging</div>
-						</div>
-					</div>
-					<div class="single-portfolio col-sm-4 all visual-identity">
-						<div class="relative">
-							<div class="thumb portfolio-item">
-								<div class="overlay overlay-bg"></div>
-								<a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-									<img class="img-fluid" src="images/02.jpg" alt="..." />
-								</a>
-							</div>
-						</div>
-						<div class="p-inner">
-							<h4>Creative Package Design</h4>
-							<div class="cat">Packaging</div>
-						</div>
-					</div>
-					<div class="single-portfolio col-sm-4 all advertising">
-						<div class="relative">
-							<div class="thumb portfolio-item">
-								<div class="overlay overlay-bg"></div>
-								<a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-									<img class="img-fluid" src="images/02.jpg" alt="..." />
-								</a>
-							</div>
-						</div>
-						<div class="p-inner">
-							<h4>Creative Package Design</h4>
-							<div class="cat">Packaging</div>
-						</div>
-					</div>
-					<div class="single-portfolio col-sm-4 all packaging">
-						<div class="relative">
-							<div class="thumb portfolio-item">
-								<div class="overlay overlay-bg"></div>
-								<a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-									<img class="img-fluid" src="images/02.jpg" alt="..." />
-								</a>
-							</div>
-						</div>
-						<div class="p-inner">
-							<h4>Creative Package Design</h4>
-							<div class="cat">Packaging</div>
-						</div>
-					</div>
-					<div class="single-portfolio col-sm-4 all publication">
-						<div class="relative">
-							<div class="thumb portfolio-item">
-								<div class="overlay overlay-bg"></div>
-								<a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-									<img class="img-fluid" src="images/02.jpg" alt="..." />
-								</a>
-							</div>
-						</div>
-						<div class="p-inner">
-							<h4>Creative Package Design</h4>
-							<div class="cat">Packaging</div>
-						</div>
-					</div>
-					<div class="single-portfolio col-sm-4 all publication">
-						<div class="relative">
-							<div class="thumb portfolio-item">
-								<div class="overlay overlay-bg"></div>
-								<a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-									<img class="img-fluid" src="images/02.jpg" alt="..." />
-								</a>
-							</div>
-						</div>
-						<div class="p-inner">
-							<h4>Creative Package Design</h4>
-							<div class="cat">Packaging</div>
-						</div>
-					</div>
-					<div class="single-portfolio col-sm-4 all AI">
-						<div class="relative">
-							<div class="thumb portfolio-item">
-								<div class="overlay overlay-bg"></div>
-								<a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
-									<img class="img-fluid" src="images/02.jpg" alt="..." />
-								</a>
-							</div>
-						</div>
-						<div class="p-inner">
-							<h4>Creative Package Design</h4>
-							<div class="cat">Packaging</div>
-						</div>
-					</div>
-					<div class="single-portfolio col-sm-4 all AI">
-						<div class="relative">
-							<div class="thumb portfolio-item">
-								<div class="overlay overlay-bg"></div>
-								<a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal">
-									<img class="img-fluid" src="images/02.jpg" alt="..." />
-								</a>
-							</div>
-						</div>
-						<div class="p-inner">
-							<h4>Creative Package Design</h4>
-							<div class="cat">Packaging</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- ======= Skills Section ======= -->
-	<section id="skills" class="skills section-bg">
-		<div class="container">
-
-			<div class="section-title">
-				<h2>Skills</h2>
-			</div>
-
-			<div class="row skills-content">
-
-				<div class="col-lg-6" data-aos="fade-up">
-
-					<div class="progress">
-						<span class="skill">Ai <i class="val">80%</i></span>
-						<div class="progress-bar-wrap">
-							<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="80"></div>
-						</div>
-					</div>
-
-					<div class="progress">
-						<span class="skill">Id <i class="val">80%</i></span>
-						<div class="progress-bar-wrap">
-							<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="80"></div>
-						</div>
-					</div>
-
-					<div class="progress">
-						<span class="skill">Ps <i class="val">60%</i></span>
-						<div class="progress-bar-wrap">
-							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-								aria-valuemax="60"></div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-					<div class="progress">
-						<span class="skill">An <i class="val">60%</i></span>
-						<div class="progress-bar-wrap">
-							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-								aria-valuemax="60"></div>
-						</div>
-					</div>
-
-					<div class="progress">
-						<span class="skill">Data Studio <i class="val">90%</i></span>
-						<div class="progress-bar-wrap">
-							<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="90"></div>
-						</div>
-					</div>
-
-					<div class="progress">
-						<span class="skill">Manage Database <i class="val">75%</i></span>
-						<div class="progress-bar-wrap">
-							<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-								aria-valuemax="75"></div>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-	</section><!-- End Skills Section -->
-
-
-	<!-- Portfolio Modals-->
-	<!-- Portfolio item 1 modal popup-->
-	<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon1.svg"
-						alt="Close modal" /></div>
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-8">
-							<div class="modal-body">
-								<section class="ftco-section single-portfolio">
-									<div class="container">
-										<div class="row">
-											<div class="col-md-12 text-center">
-												<h2 class="heading-section mb-5 pb-md-4">Carousel #10</h2>
-											</div>
-											<div class="col-md-12 single-portfolio">
-												<div class="slider-hero">
-													<div class="featured-carousel owl-carousel">
-														<div class="item">
-															<div class="work">
-																<div class="img d-flex align-items-center justify-content-center"
-																	style="background-image: url(images/01.jpg);">
-																</div>
-															</div>
-														</div>
-														<div class="item">
-															<div class="work">
-																<div class="img d-flex align-items-center justify-content-center"
-																	style="background-image: url(images/02.jpg);">
-																</div>
-															</div>
-														</div>
-														<div class="item">
-															<div class="work">
-																<div class="img d-flex align-items-center justify-content-center"
-																	style="background-image: url(images/03.jpg);">
-																</div>
-															</div>
-														</div>
-														<div class="item">
-															<div class="work">
-																<div class="img d-flex align-items-center justify-content-center"
-																	style="background-image: url(images/04.jpg);">
-																</div>
-															</div>
-														</div>
-														<div class="item">
-															<div class="work">
-																<div class="img d-flex align-items-center justify-content-center"
-																	style="background-image: url(images/05.jpg);">
-																</div>
-															</div>
-														</div>
-														<div class="item">
-															<div class="work">
-																<div class="img d-flex align-items-center justify-content-center"
-																	style="background-image: url(images/06.jpg);">
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="text-center">
-														<ul class="thumbnail carousel-caption">
-															<li class="active img"><a href="#"><img src="images/01.jpg"
-																		alt="Image" class="img-fluid"></a></li>
-															<li><a href="#"><img src="images/02.jpg" alt="Image"
-																		class="img-fluid"></a></li>
-															<li><a href="#"><img src="images/03.jpg" alt="Image"
-																		class="img-fluid"></a></li>
-															<li><a href="#"><img src="images/04.jpg" alt="Image"
-																		class="img-fluid"></a></li>
-															<li><a href="#"><img src="images/05.jpg" alt="Image"
-																		class="img-fluid"></a></li>
-															<li><a href="#"><img src="images/06.jpg" alt="Image"
-																		class="img-fluid"></a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</section>
-								<button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-									type="button">
-									<i class="fas fa-xmark me-1"></i>
-									Close Project
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	
+	<div class="iframe text-center">
+		<iframe src="slide/index.html"></iframe>
 	</div>
-	<!-- Portfolio item 2 modal popup-->
-	<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg"
-						alt="Close modal" /></div>
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-8">
-							<div class="modal-body">
-								<section class="ftco-section">
-									<div class="container">
-										<div class="row">
-											<div class="col-md-12 text-center">
-												<h2 class="heading-section mb-5 pb-md-4">Carousel #10</h2>
-											</div>
-											<div class="col-md-12">
-												<div class="slider-hero">
-													<div class="featured-carousel owl-carousel">
-														<div class="item">
-															<div class="work">
-																<div class="img d-flex align-items-center justify-content-center"
-																	style="background-image: url(images/01.jpg);">
-
-																	<div class="text text-center">
-																		<h2>Discover New Places</h2>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="item">
-															<div class="work">
-																<div class="img d-flex align-items-center justify-content-center"
-																	style="background-image: url(images/02.jpg);">
-																	<div class="text text-center">
-																		<h2>Dream Destination</h2>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="item">
-															<div class="work">
-																<div class="img d-flex align-items-center justify-content-center"
-																	style="background-image: url(images/03.jpg);">
-																	<div class="text text-center">
-																		<h2>Travel Exploration</h2>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="item">
-															<div class="work">
-																<div class="img d-flex align-items-center justify-content-center"
-																	style="background-image: url(images/04.jpg);">
-																	<div class="text text-center">
-																		<h2>Travel Exploration</h2>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="item">
-															<div class="work">
-																<div class="img d-flex align-items-center justify-content-center"
-																	style="background-image: url(images/05.jpg);">
-																	<div class="text text-center">
-																		<h2>Travel Exploration</h2>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="item">
-															<div class="work">
-																<div class="img d-flex align-items-center justify-content-center"
-																	style="background-image: url(images/06.jpg);">
-																	<div class="text text-center">
-																		<h2>Travel Exploration</h2>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="my-5 text-center">
-														<ul class="thumbnail">
-															<li class="active img"><a href="#"><img src="images/01.jpg"
-																		alt="Image" class="img-fluid"></a></li>
-															<li><a href="#"><img src="images/02.jpg" alt="Image"
-																		class="img-fluid"></a></li>
-															<li><a href="#"><img src="images/03.jpg" alt="Image"
-																		class="img-fluid"></a></li>
-															<li><a href="#"><img src="images/04.jpg" alt="Image"
-																		class="img-fluid"></a></li>
-															<li><a href="#"><img src="images/05.jpg" alt="Image"
-																		class="img-fluid"></a></li>
-															<li><a href="#"><img src="images/06.jpg" alt="Image"
-																		class="img-fluid"></a></li>
-														</ul>
-
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</section>
-								<button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-									type="button">
-									<i class="fas fa-xmark me-1"></i>
-									Close Project
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Portfolio item 3 modal popup-->
-	<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg"
-						alt="Close modal" /></div>
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-8">
-							<div class="modal-body">
-								<!-- Project details-->
-								<h2 class="text-uppercase">Backpack</h2>
-								<p class="item-intro text-muted">Calfskin and denim crossbody bag with logo</p>
-								<img class="img-fluid d-block mx-auto"
-									src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwfe6443d7/images/zoom/BM2228AG184_8B956_0.jpg?sw=640&sh=816&sm=fit"
-									alt="..." />
-								<p style="margin-bottom: 0">Import duties included</p>
-								<p style="margin-bottom: 0">Art. Nr. BM2038AH53989853</p>Art. Nr. BM2038AH53989853
-								<p style="margin-bottom: 0">The new “Denim” collection is the result of an evocative
-									journey back to the brand’s roots, which have been reworked to add contemporary
-									edge. This new calfskin and denim crossbody bag features the all-over DG logo.
-									Practical and compact, it features...</p>
-								<ul class="list-inline">
-									<li>
-										<strong>Client:</strong>
-										Finish
-									</li>
-									<li>
-										<strong>Category:</strong>
-										Identity
-									</li>
-								</ul>
-								<button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-									type="button">
-									<i class="fas fa-xmark me-1"></i>
-									Close Project
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Portfolio item 4 modal popup-->
-	<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg"
-						alt="Close modal" /></div>
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-8">
-							<div class="modal-body">
-								<!-- Project details-->
-								<h2 class="text-uppercase">Wallet</h2>
-								<p class="item-intro text-muted">Calfskin bifold wallet with raised logo</p>
-								<img class="img-fluid d-block mx-auto"
-									src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw0ab0b754/images/zoom/BP2215AG219_80999_0.jpg?sw=640&sh=816&sm=fit"
-									alt="..." />
-								<p style="margin-bottom: 0">Import duties included</p>
-								<p style="margin-bottom: 0">Art. Nr. BP1321AG21880999</p>
-								<p style="margin-bottom: 0">Practical and compact, this new bifold wallet comes in
-									calfskin and features the 3D-effect Dolce&Gabbana Milano logo on the tag:</p>
-								<ul class="list-inline">
-									<li>
-										<strong>Client:</strong>
-										Tag
-									</li>
-									<li>
-										<strong>Category:</strong>
-										Wallet
-									</li>
-								</ul>
-								<button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-									type="button">
-									<i class="fas fa-xmark me-1"></i>
-									Close Product
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Portfolio item 5 modal popup-->
-	<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg"
-						alt="Close modal" /></div>
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-8">
-							<div class="modal-body">
-								<!-- Project details-->
-								<h2 class="text-uppercase">Accessories</h2>
-								<p class="item-intro text-muted">Calfskin key chain with logo tag</p>
-								<img class="img-fluid d-block mx-auto"
-									src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw2e5bf30f/images/zoom/BP1371AG219_80999_0.jpg?sw=640&sh=816&sm=fit"
-									alt="..." />
-								<p style="margin-bottom: 0">Import duties included</p>
-								<p style="margin-bottom: 0">Nr. BP1371AG21980999</p>
-								<p style="margin-bottom: 0">This Dauphine calfskin key chain features the
-									ruthenium-plated logo tag detail.</p>
-								<ul class="list-inline">
-									<li>
-										<strong>Client:</strong>
-										Southwest
-									</li>
-									<li>
-										<strong>Category:</strong>
-										Accessories
-									</li>
-								</ul>
-								<button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-									type="button">
-									<i class="fas fa-xmark me-1"></i>
-									Close Product
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Portfolio item 6 modal popup-->
-	<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg"
-						alt="Close modal" /></div>
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-8">
-							<div class="modal-body">
-								<!-- Project details-->
-								<h2 class="text-uppercase">Belt</h2>
-								<p class="item-intro text-muted">Tape belt with branded tag</p>
-								<img class="img-fluid d-block mx-auto"
-									src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwe0a44101/images/zoom/BC4771AG654_8B956_0.jpg?sw=640&sh=816&sm=fit"
-									alt="..." />
-								<p style="margin-bottom: 0">Import duties included</p>
-								<p style="margin-bottom: 0">Art. Nr. BC4771AG6548B956</p>
-								<p style="margin-bottom: 0">This new tape belt features calfskin details and the
-									ruthenium-plated metal buckle with logo.</p>
-								<ul class="list-inline">
-									<li>
-										<strong>Client:</strong>
-										South
-									</li>
-									<li>
-										<strong>Category:</strong>
-										Belt
-									</li>
-								</ul>
-								<button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-									type="button">
-									<i class="fas fa-xmark me-1"></i>
-									Close Product
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Portfolio item 7 modal popup-->
-	<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg"
-						alt="Close modal" /></div>
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-8">
-							<div class="modal-body">
-								<!-- Project details-->
-								<h2 class="text-uppercase">Belt</h2>
-								<p class="item-intro text-muted">Tape belt with branded tag</p>
-								<img class="img-fluid d-block mx-auto"
-									src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwe0a44101/images/zoom/BC4771AG654_8B956_0.jpg?sw=640&sh=816&sm=fit"
-									alt="..." />
-								<p style="margin-bottom: 0">Import duties included</p>
-								<p style="margin-bottom: 0">Art. Nr. BC4771AG6548B956</p>
-								<p style="margin-bottom: 0">This new tape belt features calfskin details and the
-									ruthenium-plated metal buckle with logo.</p>
-								<ul class="list-inline">
-									<li>
-										<strong>Client:</strong>
-										South
-									</li>
-									<li>
-										<strong>Category:</strong>
-										Belt
-									</li>
-								</ul>
-								<button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-									type="button">
-									<i class="fas fa-xmark me-1"></i>
-									Close Product
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Portfolio item 8 modal popup-->
-	<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg"
-						alt="Close modal" /></div>
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-8">
-							<div class="modal-body">
-								<!-- Project details-->
-								<h2 class="text-uppercase">Belt</h2>
-								<p class="item-intro text-muted">Tape belt with branded tag</p>
-								<img class="img-fluid d-block mx-auto"
-									src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwe0a44101/images/zoom/BC4771AG654_8B956_0.jpg?sw=640&sh=816&sm=fit"
-									alt="..." />
-								<p style="margin-bottom: 0">Import duties included</p>
-								<p style="margin-bottom: 0">Art. Nr. BC4771AG6548B956</p>
-								<p style="margin-bottom: 0">This new tape belt features calfskin details and the
-									ruthenium-plated metal buckle with logo.</p>
-								<ul class="list-inline">
-									<li>
-										<strong>Client:</strong>
-										South
-									</li>
-									<li>
-										<strong>Category:</strong>
-										Belt
-									</li>
-								</ul>
-								<button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-									type="button">
-									<i class="fas fa-xmark me-1"></i>
-									Close Product
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<div class="text-center">
+		<a href="../resume.html" class="ms-slide__link btn view">View More My Featured Portfolio</a>
 	</div>
 
-	<section class="site-section " id="section-resume">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 mb-5">
-					<div class="section-heading text-center">
-						<h2>My <strong>Resume</strong></h2>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<h2 class="mb-5">Education</h2>
-					<div class="resume-item mb-4">
-						<span class="date">2018 - 2020</span>
-						<h3>DPI Graphic Center</h3>
-						<span class="school">Saigon</span>
-					</div>
-					<div class="resume-item mb-4">
-						<span class="date">1999 - 2004</span>
-						<h3>University of Architecture HCMC</h3>
-						<span class="school">Saigon</span>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<h2 class="mb-5">Experience</h2>
-					<div class="resume-item mb-4">
-						<span class="date">2022 - Present</span>
-						<h3>Graphic Designer at HOANGNAM GROUP</h3>
-						<span class="school">Saigon</span>
-					</div>
-					<div class="resume-item mb-4">
-						<span class="date">2016 - 2022</span>
-						<h3>Graphic Design Freelancer</h3>
-						<span class="school">Saigon</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="site-section" id="section-about">
-		<div class="container">
-			<div class="row mb-5 align-items-center">
-				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
-					<img src="images/01.jpg" alt="Image placeholder" class="img-fluid">
-				</div>
-				<div class="col-lg-5 pl-lg-5">
-					<div class="section-heading">
-						<h2><strong>About</strong> Me</h2>
-					</div>
-					<h1 style="color: #F15D2A;">Freelance Designer</h1>
-					<p class="lead">“A passionate designer with a keen interest in creative design
-						and experience in Fashion and Graphic”.
-					</p>
-					<p class="mb-5  ">With valuable
-						experience in freelance design, I am keen to pursue a career
-						as Graphic Designer. Looking to secure a long-term role with a
-						brand where I can further develop my design skillset in brand
-						identity, marketing and advertising graphic design.
-					</p>
-
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="site-section pb-0" id="section-services">
-		<div class="container">
-			<div class="row mb-4">
-				<div class="col-md-12">
-					<div class="section-heading text-center">
-						<h2>My <strong>Services</strong></h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-lg-4 text-center mb-5">
-					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
-						<span class="icon">
-							<span class="bi bi-phone"></span>
-						</span>
-						<h3 class="mb-4">Web Design</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-							there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
-							Semantics, a large language ocean.</p>
-						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 text-center mb-5">
-					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
-						<span class="icon">
-							<span class="icon-presentation"></span>
-						</span>
-						<h3 class="mb-4">Search Engine Optimization</h3>
-						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
-							It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 text-center mb-5">
-					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
-						<span class="icon">
-							<span class="icon-video2"></span>
-						</span>
-						<h3 class="mb-4">Video Editing</h3>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-							unorthographic life One day however a small line of blind text by the name of Lorem Ipsum
-							decided to leave for the far World of Grammar.</p>
-						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<section class="site-section" id="section-contact">
 		<div class="container">
@@ -882,25 +103,30 @@
 					</div>
 				</div>
 				<div class="col-md-7 mb-5 mb-md-0">
-					<form action="" class="site-form">
+					<div class="site-form" id="contact-form" name="contact-form">
 						<h3 class="mb-5">Get In Touch</h3>
 						<div class="form-group">
-							<input type="text" class="form-control px-3 py-4" placeholder="Your Name">
+							<input type="text" class="form-control px-3 py-4" placeholder="Your Name" name="name"
+								id="name" required>
 						</div>
 						<div class="form-group">
-							<input type="email" class="form-control px-3 py-4" placeholder="Your Email">
+							<input type="email" class="form-control px-3 py-4" placeholder="Your Email" name="email"
+								id="email">
+
 						</div>
 						<div class="form-group">
-							<input type="email" class="form-control px-3 py-4" placeholder="Your Phone">
+							<input title="Nhập số điện thoại từ 10 đến 11 số" type="phone"
+								class="form-control px-3 py-4" placeholder="Your Phone" name="phone" id="phone">
 						</div>
 						<div class="form-group mb-5">
-							<textarea class="form-control px-3 py-4" cols="30" rows="10"
-								placeholder="Write a Message"></textarea>
+							<textarea class="form-control px-3 py-4" cols="30" rows="10" placeholder="Write a Message"
+								name="message" id="message"></textarea>
 						</div>
 						<div class="form-group">
-							<input type="submit" class="btn btn-primary  px-4 py-3" value="Send Message">
+							<input onclick="sendMail()" name="send" type="submit"
+								class="btn btn-primary  px-4 py-3" value="Send Message">
 						</div>
-					</form>
+					</div>
 				</div>
 				<div class="col-md-5 pl-md-5">
 					<h3 class="mb-5">My Contact Details</h3>
@@ -918,97 +144,68 @@
 							<span class="text-uppercase">Address</span>
 							Saigon - Vietnam
 						</li>
+						<li>
+							<span class="text-uppercase">Mesenger</span>
+							<a href="https://m.me/phamnguyenhoang.thientoan" class="elementor-button-link elementor-button elementor-size-sm">https://messenger/phamthientoan</a>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<footer class="site-footer">
-		<div class="container">
-			<div class="row mb-5 profile">
-				<div class="col-md-12 text-center social-links">
-					<a href="https://www.facebook.com/hoangvu.pcx" class="facebook"><i class="bi bi-facebook"></i></a>
-					<a href="https://www.instagram.com/hoangvu_pcx/" class="instagram"><i
-							class="bi bi-instagram"></i></a>
-					<a href="https://www.instagram.com/hoangvu_pcx/" class="instagram"><i class="bi bi-youtube"></i></a>
-				</div>
-			</div>
-		</div>
-	</footer>
+	
 
 	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
 			class="bi bi-arrow-up-short"></i></a>
 
-	<script src="js/vendor/jquery.min.js"></script>
-	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/vendor/popper.min.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-	<script src="js/vendor/jquery.easing.1.3.js"></script>
-	<script src="js/vendor/jquery.stellar.min.js"></script>
-	<script src="js/vendor/jquery.waypoints.min.js"></script>
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-	<script src="js/custom.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="js/vendor/scripts.js"></script>
-	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+	
 
-	<script>
-		$(document).ready(function () {
-			$(window).scroll(function (event) {
-				var pos_body = $('html,body').scrollTop();
-				if (pos_body > 20) {
-					$('.back-to-top').addClass('active');
-				}
-				else {
-					$('.back-to-top').removeClass('active');
-				}
-			}); // Xử lý khi button-go-to-top di chuyển lên gần đầu trang
-
-			$('.back-to-top').click(function (event) {
-				$('html,body').animate({ scrollTop: 0 }, 800);
-			}); // Button go to top
-		}
-		})
-	</script>
-
-	<!-- Carousel -->
-	<script src="carousel/js/popper.js"></script>
-	<script src="carousel/js/bootstrap.min.js"></script>
-	<script src="carousel/js/owl.carousel.min.js"></script>
-	<script src="carousel/js/main.js"></script>
-
-	<!-- Vendor JS Files -->
-	<script src="assets/vendor/typed.js/typed.min.js"></script>
+			<script src="js/vendor/jquery.min.js"></script>
+			<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
+			<script src="js/vendor/popper.min.js"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
+			<script src="js/vendor/jquery.easing.1.3.js"></script>
+			<script src="js/vendor/jquery.stellar.min.js"></script>
+			<script src="js/vendor/jquery.waypoints.min.js"></script>
+			<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+			<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+			<script src="js/custom.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+			<script src="js/vendor/scripts.js"></script>
+			<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
 
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
 
-		gtag('config', 'UA-23581568-13');
-	</script>
-	<script defer
-		src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816"
-		integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
-		data-cf-beacon='{"rayId":"7d8ba3ad1a590453","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}'
-		crossorigin="anonymous"></script>
+			<!-- Carousel -->
+			<script src="carousel/js/popper.js"></script>
+			<script src="carousel/js/bootstrap.min.js"></script>
+			<script src="carousel/js/owl.carousel.min.js"></script>
+			<script src="carousel/js/main.js"></script>
+
+			<!-- Vendor JS Files -->
+			<script src="assets/vendor/typed.js/typed.min.js"></script>
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag() { dataLayer.push(arguments); }
+				gtag('js', new Date());
+
+				gtag('config', 'UA-23581568-13');
+			</script>
+			<script defer
+				src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816"
+				integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
+				data-cf-beacon='{"rayId":"7d8ba3ad1a590453","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}'
+				crossorigin="anonymous"></script>
 </body>
 
 </html>
 
-
 <!-- Vendor JS Files -->
-
 <script src="js/glightbox.min.js"></script>
-
 <script src="js/swiper-bundle.min.js"></script>
-
-
 
 <!-- Template Main JS File -->
 <script src="js/main.js"></script>
