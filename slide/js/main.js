@@ -54,7 +54,7 @@
         cssClass: 'ms--links',
         range: [0, 5],
         rangeContent: function () {
-            return '<p href="../resume.html" class="ms-slide__link">Portfolio</p>';
+            return '<p href="../portfolio-detail.html" class="ms-slide__link">Portfolio</p>';
         },
         vertical: true,
         interactive: false

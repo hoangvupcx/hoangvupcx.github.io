@@ -5,42 +5,24 @@
 	<title>Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/flexslider.css">
-	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="css/animate.css">	
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/style-liberty.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">	
 	<!-- Option 1: Include in HTML -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+	<link rel="stylesheet" href="fact/css/bootstrap-icon.css">
+	<link rel="stylesheet" href="fact/css/style.css">
 
-	<!-- Carousel -->
-	<link rel="stylesheet" href="carousel/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="carousel/css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
-	<link rel="stylesheet" href="carousel/css/animate.css">
-	<link rel="stylesheet" href="carousel/css/style.css">
-	<!-- <script
-    nonce="2165f85a-8ce5-4a71-a9bf-6450e5b6fb29">(function (w, d) { !function (dK, dL, dM, dN) { dK[dM] = dK[dM] || {}; dK[dM].executed = []; dK.zaraz = { deferred: [], listeners: [] }; dK.zaraz.q = []; dK.zaraz._f = function (dO) { return function () { var dP = Array.prototype.slice.call(arguments); dK.zaraz.q.push({ m: dO, a: dP }) } }; for (const dQ of ["track", "set", "debug"]) dK.zaraz[dQ] = dK.zaraz._f(dQ); dK.zaraz.init = () => { var dR = dL.getElementsByTagName(dN)[0], dS = dL.createElement(dN), dT = dL.getElementsByTagName("title")[0]; dT && (dK[dM].t = dL.getElementsByTagName("title")[0].text); dK[dM].x = Math.random(); dK[dM].w = dK.screen.width; dK[dM].h = dK.screen.height; dK[dM].j = dK.innerHeight; dK[dM].e = dK.innerWidth; dK[dM].l = dK.location.href; dK[dM].r = dL.referrer; dK[dM].k = dK.screen.colorDepth; dK[dM].n = dL.characterSet; dK[dM].o = (new Date).getTimezoneOffset(); if (dK.dataLayer) for (const dX of Object.entries(Object.entries(dataLayer).reduce(((dY, dZ) => ({ ...dY[1], ...dZ[1] })), {}))) zaraz.set(dX[0], dX[1], { scope: "page" }); dK[dM].q = []; for (; dK.zaraz.q.length;) { const d_ = dK.zaraz.q.shift(); dK[dM].q.push(d_) } dS.defer = !0; for (const ea of [localStorage, sessionStorage]) Object.keys(ea || {}).filter((ec => ec.startsWith("_zaraz_"))).forEach((eb => { try { dK[dM]["z_" + eb.slice(7)] = JSON.parse(ea.getItem(eb)) } catch { dK[dM]["z_" + eb.slice(7)] = ea.getItem(eb) } })); dS.referrerPolicy = "origin"; dS.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(dK[dM]))); dR.parentNode.insertBefore(dS, dR) };["complete", "interactive"].includes(dL.readyState) ? zaraz.init() : dK.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);
-  </script> -->
-
+	
 
 </head>
-
-
-
-
 <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+	<div>
+		<div class="indicator"></div>
+	</div>
 	<nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
 		<div class="container">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
@@ -52,21 +34,76 @@
 					<li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
 					<li class="nav-item"><a class="nav-link" href="/portfolio-detail.html">Portfolio</a></li>
 					<li class="nav-item"><a class="nav-link" href="#section-resume" style="color: #F15D2A !important;">Resume</a></li>
-					<li class="nav-item"><a class="nav-link" href="#section-skill">Skill</a></li>
 					<li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-skill">Skill</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-fact">Fact</a></li>
 					<li class="nav-item"><a class="nav-link" href="#section-services">Service</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<section class="site-section " id="section-resume">
+	<section class="site-section" id="section-about">
+		<div class="container">
+			
+			<div class="row mb-5 align-items-center">
+				<div class="col-lg-7 pr-lg-5 mb-lg-0">
+					<img src="images/about/avatar.jpg" alt="Image placeholder" class="img-fluid">
+				</div>
+				<div class="col-lg-5 pl-lg-5">
+					<div class="section-heading">
+						<h2><strong>About</strong> Me</h2>
+					</div>
+					<h1 style="color: #F15D2A;">Freelance Designer</h1>
+					<p class="lead">“A passionate designer with a keen interest in creative design
+						and experience in Fashion and Graphic”.
+					</p>
+					<p class="mb-5  ">With valuable
+						experience in freelance design, I am keen to pursue a career
+						as Graphic Designer. Looking to secure a long-term role with a
+						brand where I can further develop my design skillset in brand
+						identity, marketing and advertising graphic design.
+					</p>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 mb-5">
+				</div>
+				<div class="col-md-6">
+					<h2><strong style="font-weight: 900;">Education</strong></h2>
+					<div class="resume-item mb-4">
+						<span class="date">2018 - 2020</span>
+						<h3>DPI Graphic Center</h3>
+						<span class="school">Saigon</span>
+					</div>
+					<div class="resume-item mb-4">
+						<span class="date">1999 - 2004</span>
+						<h3>University of Architecture HCMC</h3>
+						<span class="school">Saigon</span>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h2><strong style="font-weight: 900;">Experience</strong></h2>
+					<div class="resume-item mb-4">
+						<span class="date">2022 - Present</span>
+						<h3>Graphic Designer at HOANGNAM GROUP</h3>
+						<span class="school">Saigon</span>
+					</div>
+					<div class="resume-item mb-4">
+						<span class="date">2016 - 2022</span>
+						<h3>Graphic Design Freelancer</h3>
+						<span class="school">Saigon</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <section id="section-resume">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 mb-5">
-					<div class="section-heading text-center">
-						<h2>My <strong>Resume</strong></h2>
-					</div>
 				</div>
 				<div class="col-md-6">
 					<h2 class="mb-5">Education</h2>
@@ -91,46 +128,46 @@
 					<div class="resume-item mb-4">
 						<span class="date">2016 - 2022</span>
 						<h3>Graphic Design Freelancer</h3>
-						<span id="section-skill" class="school">Saigon</span>
+						<span class="school">Saigon</span>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
     	<!-- ======= Skills Section ======= -->
-    <section>
-        <section id="skills" class="skills section-bg">
+    <section id="section-skill">
+        <section id="skills" class="skills section-bg site-section">
             <div class="container">
     
-                <div class="section-title">
-                    <h2>Skills</h2>
-                </div>
+                <div class="section-heading">
+					<h2><strong>Skills</strong></h2>
+				</div>
     
                 <div class="row skills-content">
     
                     <div class="col-lg-6" data-aos="fade-up">
     
                         <div class="progress">
-                            <span class="skill">Ai <i class="val">80%</i></span>
+                            <span class="skill">Illustrator <i class="val">90%</i></span>
                             <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
                                     aria-valuemax="80"></div>
                             </div>
                         </div>
     
                         <div class="progress">
-                            <span class="skill">Id <i class="val">80%</i></span>
+                            <span class="skill">Photoshop <i class="val">90%</i></span>
                             <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
                                     aria-valuemax="80"></div>
                             </div>
                         </div>
     
                         <div class="progress">
-                            <span class="skill">Ps <i class="val">60%</i></span>
+                            <span class="skill">Indesign <i class="val">90%</i></span>
                             <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
                                     aria-valuemax="60"></div>
                             </div>
                         </div>
@@ -138,28 +175,28 @@
                     </div>
     
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+						
+						<div class="progress">
+                            <span class="skill">Hand Drawing <i class="val">80%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                    aria-valuemax="80"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">Digital illustration <i class="val">70%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="70"></div>
+                            </div>
+                        </div>
     
                         <div class="progress">
-                            <span class="skill">An <i class="val">60%</i></span>
+                            <span class="skill">Blender <i class="val">60%</i></span>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
                                     aria-valuemax="60"></div>
-                            </div>
-                        </div>
-    
-                        <div class="progress">
-                            <span class="skill">Data Studio <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="90"></div>
-                            </div>
-                        </div>
-    
-                        <div class="progress">
-                            <span class="skill">Manage Database <i class="val">75%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                    aria-valuemax="75"></div>
                             </div>
                         </div>
     
@@ -171,39 +208,57 @@
         </section><!-- End Skills Section -->
     </section>
 	
-
-	<section class="site-section" id="section-about">
+	<!-- ======= Facts Section ======= -->
+    <section id="section-fact" class="facts site-section">
 		<div class="container">
-			<div class="row mb-5 align-items-center">
-				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
-					<img src="images/01.jpg" alt="Image placeholder" class="img-fluid">
-				</div>
-				<div class="col-lg-5 pl-lg-5">
-					<div class="section-heading">
-						<h2><strong>About</strong> Me</h2>
-					</div>
-					<h1 style="color: #F15D2A;">Freelance Designer</h1>
-					<p class="lead">“A passionate designer with a keen interest in creative design
-						and experience in Fashion and Graphic”.
-					</p>
-					<p class="mb-5  ">With valuable
-						experience in freelance design, I am keen to pursue a career
-						as Graphic Designer. Looking to secure a long-term role with a
-						brand where I can further develop my design skillset in brand
-						identity, marketing and advertising graphic design.
-					</p>
-
-				</div>
+  
+			<div class="section-heading">
+				<h2><strong>Facts</strong></h2>
 			</div>
+		  <div class="row no-gutters">
+  
+			<div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+			  <div class="count-box">
+				<i class="bi bi-emoji-smile"></i>
+				<span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+				<p><strong class="span-fact">Positive Responses</strong></p>
+			  </div>
+			</div>
+  
+			<div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+			  <div class="count-box">
+				<i class="bi bi-journal-richtext"></i>
+				<span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+				<p><strong class="span-fact">Projects</strong></p>
+			  </div>
+			</div>
+  
+			<div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+			  <div class="count-box">
+				<i class="bi bi-headset"></i>
+				<span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+				<p><strong class="span-fact">Hours Of Support</strong></p>
+			  </div>
+			</div>
+  
+			<div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+			  <div class="count-box">
+				<i class="bi bi-people"></i>
+				<span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+				<p><strong class="span-fact">Team Work</strong></p>
+			  </div>
+			</div>
+  
+		  </div>
+  
 		</div>
-	</section>
-
+	  </section><!-- End Facts Section -->
 
 	<section class="site-section pb-0" id="section-services">
 		<div class="container">
 			<div class="row mb-4">
 				<div class="col-md-12">
-					<div class="section-heading text-center">
+					<div class="section-heading">
 						<h2>My <strong>Services</strong></h2>
 					</div>
 				</div>
@@ -248,71 +303,37 @@
 		</div>
 	</section>
 
+	 
+
 
 	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
 			class="bi bi-arrow-up-short"></i></a>
 
-	<a href="https://m.me/phamnguyenhoang.thientoan" class="elementor-button-link elementor-button elementor-size-sm"
-		role="button">
-		<span class="elementor-button-content-wrapper">
-			<span class="elementor-button-text">Message Us</span>
+	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>	
+	<script src="js/vendor/jquery.easing.1.3.js"></script>	
+	<script src="js/vendor/jquery.waypoints.min.js"></script>	
+	<script src="js/custom.js"></script>
+	<script src="assets/js/main.js"></script>
+			
+	<!-- Vendor JS Files -->
+	<script src="js/glightbox.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+	<script src="carousel/js/bootstrap.min.js"></script>
 
-			<script src="js/vendor/jquery.min.js"></script>
-			<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
-			<script src="js/vendor/popper.min.js"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>
-			<script src="js/vendor/jquery.easing.1.3.js"></script>
-			<script src="js/vendor/jquery.stellar.min.js"></script>
-			<script src="js/vendor/jquery.waypoints.min.js"></script>
-			<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-			<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-			<script src="js/custom.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-			<script src="js/vendor/scripts.js"></script>
-			<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+	<!-- Template Main JS File -->
+	<script src="js/main.js"></script>
+	
+	<!-- Facts -->
+	<script src="fact/js/purecounter_vanilla.js"></script>
+	<script src="fact/js/aos.js"></script>
+	<script src="fact/js/glightbox.min.js"></script>
+	<script src="fact/js/swiper-bundle.min.js"></script>
+	<script src="fact/js/main.js"></script>
 
+	<!-- Bar Scroll -->
+	<script src="js/bar.js"></script>	
 
-
-			<!-- Carousel -->
-			<script src="carousel/js/popper.js"></script>
-			<script src="carousel/js/bootstrap.min.js"></script>
-			<script src="carousel/js/owl.carousel.min.js"></script>
-			<script src="carousel/js/main.js"></script>
-
-			<!-- Vendor JS Files -->
-			<script src="assets/vendor/typed.js/typed.min.js"></script>
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-			<script>
-				window.dataLayer = window.dataLayer || [];
-				function gtag() { dataLayer.push(arguments); }
-				gtag('js', new Date());
-
-				gtag('config', 'UA-23581568-13');
-			</script>
-			<script defer
-				src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816"
-				integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
-				data-cf-beacon='{"rayId":"7d8ba3ad1a590453","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}'
-				crossorigin="anonymous"></script>
+	
 </body>
-
 </html>
-
-<!-- Vendor JS Files -->
-<script src="js/glightbox.min.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
-
-<!-- Template Main JS File -->
-<script src="js/main.js"></script>
-
-<!-- Send Mail -->
-<script>
-	function validateForm() {
-		let x = document.forms["contact-form"]["name"].value;
-		if (x == "") {
-			alert("Name must be filled out");
-			return false;
-		}
-	}
-</script>
